@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" prefHeight="297.0" prefWidth="472.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95a5a65a" height="37.0" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+      <Label layoutX="14.0" layoutY="5.0" prefHeight="28.0" prefWidth="69.0" text=" Log In">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="210.0" layoutY="55.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/account.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="69.0" layoutY="125.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" layoutX="163.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #bdc3c7;" unFocusColor="#bda6a6e4" />
+      <Label layoutX="74.0" layoutY="176.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="163.0" layoutY="174.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #bdc3c7;" />
+      <JFXButton layoutX="106.0" layoutY="232.0" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="255.0" layoutY="232.0" onAction="#logInOnAction" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #bdc3c7;" text="Log In">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

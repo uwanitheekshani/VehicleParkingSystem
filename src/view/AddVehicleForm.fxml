@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddVehicleContext" prefHeight="271.0" prefWidth="517.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="-4.0" prefHeight="23.0" prefWidth="606.0" style="-fx-background-color: #bdc3c7;" text="  Add Vehicle" textFill="#171515">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmblVehicleType" layoutX="405.0" layoutY="70.0" prefHeight="25.0" prefWidth="98.0" promptText="Van" />
+      <JFXButton buttonType="RAISED" layoutX="395.0" layoutY="193.0" onAction="#addlVehicleOnAction" style="-fx-border-color: blue;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="42.0" layoutY="74.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNum" layoutX="150.0" layoutY="70.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="31.0" layoutY="118.0" text="Maximum Weight">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMaximumWeight" layoutX="150.0" layoutY="114.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="31.0" layoutY="164.0" text="No of passengers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNoPassengers" layoutX="150.0" layoutY="160.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="323.0" layoutY="74.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

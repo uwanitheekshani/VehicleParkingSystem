@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddDriverContext" prefHeight="288.0" prefWidth="602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="-4.0" prefHeight="23.0" prefWidth="606.0" style="-fx-background-color: #bdc3c7;" text="  Add Driver" textFill="#171515">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="425.0" layoutY="247.0" onAction="#addlDriverOnAction" style="-fx-border-color: blue;" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="89.0" layoutY="44.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDriverName" layoutX="173.0" layoutY="40.0" prefHeight="25.0" prefWidth="338.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="140.0" layoutY="77.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" layoutX="173.0" layoutY="73.0" prefHeight="25.0" prefWidth="338.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="51.0" layoutY="113.0" text="Driving License No.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDrivingLiNo" layoutX="173.0" layoutY="109.0" prefHeight="25.0" prefWidth="338.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="117.0" layoutY="145.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="173.0" layoutY="145.0" prefHeight="47.0" prefWidth="338.0" style="-fx-background-color: #95a5a6;" />
+      <Label layoutX="99.0" layoutY="206.0" text="Contact No">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContactNo" layoutX="173.0" layoutY="202.0" prefHeight="25.0" prefWidth="338.0" style="-fx-background-color: #95a5a6;" />
+   </children>
+</AnchorPane>
